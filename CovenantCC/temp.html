@@ -1,0 +1,150 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="styles/main.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+</head>
+<body>
+<div id="fxHeader"><!--Fake Header--></div>
+<div class="gridContainer clearfix">
+  <div id="logo"><h1><a href="index.html">Covenant Church Douglas, GA.</a></h1></div>
+  <div id="cssmenu">
+  <ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub'><a href='#'><span>New To Covenant</span></a>
+      <ul>
+         <li class="hidden"><a href='#'><span>Welcome</span></a></li>
+         <li><a href='#'><span>Times &amp; Directions</span></a></li>
+         <li class='last'><a href='#'><span>Next Step</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>About</span></a>
+      <ul>
+         <li><a href='#'><span>Our Pastors</span></a></li>
+         <li><a href='#'><span>We Believe</span></a></li>
+         <li class='last'><a href='#'><span>Mission Support</span></a></li>
+      </ul>
+   </li>
+   <li class='last'><a href='#'><span>News &amp; Events</span></a></li>
+   <li class='last'><a href='#'><span>Blog</span></a></li>
+      <li class='has-sub'><a href='#'><span>Media</span></a>
+      <ul>
+         <li><a href='#'><span>Latest Service</span></a></li>
+         <li><a href='#'><span>Photo Gallery</span></a></li>
+         <li class='last'><a href='#'><span>Just For Fun</span></a></li>
+      </ul>
+   </li>
+         <li class='has-sub'><a href='#'><span>Ministries</span></a>
+      <ul>
+         <li><a href='#'><span>Children</span></a></li>
+         <li><a href='#'><span>Students</span></a></li>
+         <li><a href='#'><span>Coffee &amp; Connect</span></a></li>
+         <li><a href='#'><span>Men</span></a></li>
+         <li class='last'><a href='#'><span>Women</span></a></li>
+      </ul>
+   </li>
+      <li class='last'><a href='#'><span>Online Giving</span></a></li>
+   <li class='last'><a href='#'><span>Contact Us</span></a></li>
+</ul>
+</div>
+<!-- Mobile Nav -->
+  <div id="dd" class="wrapper-dropdown-1" tabindex="1">
+    <span>Menu</span>
+    <ul class="dropdown">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New To Covenant</a></li>
+            <li><a href="#">About</a></li>
+                <li><a href="#">News &amp; Events</a></li>
+                 <li><a href="#">Blog</a></li>
+                  <li><a href="#">Media</a></li>
+                     <li><a href="#">Children</a></li>
+                      <li><a href="#">Students</a></li>
+                       <li><a href="#">Coffee &amp; Connect</a></li>
+                        <li><a href="#">Men</a></li>
+                         <li><a href="#">Women</a></li>
+                          <li><a href="#">Online Giving</a></li>
+                           <li><a href="#">Contact Us</a></li>
+    </ul>
+</div>
+  <div id="container"><h1>Content Container</h1></div>
+</div>
+ <div id="footer">
+ <div class="fxFooter">
+   <div id="ftContent"><h1>Footer</h1></div>
+  </div> 
+ </div>
+<!-- Java Script -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+			
+			function DropDown(el) {
+				this.dd = el;
+				this.placeholder = this.dd.children('span');
+				this.opts = this.dd.find('ul.dropdown > li');
+				this.val = '';
+				this.index = -1;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						return false;
+					});
+
+					obj.opts.on('click',function(){
+						var opt = $(this);
+						obj.val = opt.text();
+						obj.index = opt.index();
+						obj.placeholder.text('Menu :  ' + obj.val);
+					});
+				},
+				getValue : function() {
+					return this.val;
+				},
+				getIndex : function() {
+					return this.index;
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-1').removeClass('active');
+				});
+
+			});
+			
+		</script>
+
+
+
+</body>
+</html>
