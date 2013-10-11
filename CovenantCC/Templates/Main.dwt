@@ -1,0 +1,178 @@
+<html>
+    <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- TemplateBeginEditable name="doctitle" --><title>Untitled Document</title><!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+        <link href="../boilerplate.css" rel="stylesheet" type="text/css" />
+        <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../player/css/progression-player.css" />
+        <!-- Default Player Styles -->
+        <link href="../player/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Player Icons -->
+        <link rel="stylesheet" type="text/css" href="../Player/css/skin-fancy.css" />
+        <link rel="stylesheet" href="../player/css/skin-minimal-dark.css" />
+        <!-- Minimal Dark Skin -->
+        <!-- jQuery library (served from Google) -->
+        <!-- bxSlider CSS file -->
+        <!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+        <!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="respond.min.js"></script>
+    </head>
+    <body>
+        <div id="fxHeader"><!--Fake Header--></div>
+        <div class="gridContainer clearfix">
+        <div id="logo">
+        <h1><a href="index.html">Covenant Church Douglas, GA.</a></h1>
+        </div>
+        <div id="serviceTime">
+        {module_contentholder,96287}
+        </div>
+        <div id="smNav">
+        {module_contentholder,96286}
+        </div>
+        <div id="cssmenu">
+        {module_contentholder,96284}
+        </div>
+        <!-- Mobile Nav -->
+        <div id="dd" class="wrapper-dropdown-1" tabindex="1"> {module_contentholder,96285}
+        </div>
+        <div id="container">
+        <!--<h1>Content Container</h1>--><!-- TemplateBeginEditable name="ContentArea" -->{tag_pagecontent}<!-- TemplateEndEditable -->
+        </div>
+        </div>
+        <div id="footer">
+        <div class="fxFooter">
+        <div id="ftContent">
+        <div id="footerNav">
+        <h2><span style="font-size: 22px; color: #305755;">Navigate Our Site</span></h2>
+        </div>
+        <div id="newsletter">
+        <h2><span style="font-size: 22px; color: #305755;">Sign up for our Newsletter</span></h2>
+        <form action="/FormProcessv2.aspx?WebFormID=78379&amp;OID={module_oid}&amp;OTYPE={module_otype}&amp;EID={module_eid}&amp;CID={module_cid}" enctype="multipart/form-data" onsubmit="return checkWholeForm63473(this)" method="post" name="catwebformform63473">
+            <span style="font-size: 16px; color: #305755;"><label for="FirstName">First Name <span class="req" style="font-size: 16px;">*</span></label></span><br />
+            <input type="text" maxlength="255" class="cat_textbox" id="FirstName" name="FirstName" />
+            <span style="font-size: 18px; color: #305755;"><label for="LastName">Last Name <span class="req" style="font-size: 18px;">*</span></label></span><br />
+            <input type="text" maxlength="255" class="cat_textbox" id="LastName" name="LastName" />
+            <span style="font-size: 18px; color: #305755;"><label for="EmailAddress">Email Address <span class="req" style="font-size: 18px;">*</span></label></span><br />
+            <input type="text" maxlength="255" class="cat_textbox" id="EmailAddress" name="EmailAddress" />
+            {module_ccsecurity}
+            <input type="submit" id="catwebformbutton" value="Join" class="cat_button" />
+        </form>
+        </div>
+        <div id="ftsmNav">
+        <h2><span style="font-size: 22px; color: #305755;">Connect With Us</span></h2>
+        <img src="/images/footerLogo.png" alt="Coveant Church Douglas GA">
+        </div>
+        </div>
+        <div id="copyRight">{module_contentholder,96370}</div>
+        </div>
+        </div>
+        <!-- Java Script -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <!-- jQuery Latest -->
+        <script src="../player/build/mediaelement-and-player.min.js"></script>
+        <!-- Audio/Video Player jQuery -->
+        <script src="../player/build/mep-feature-playlist.js"></script>
+        <!-- Playlist JavaSCript -->
+        <script src="../js/responsiveslides.min.js"></script>
+        <script src="/CatalystScripts/ValidationFunctions.js" type="text/javascript"></script>
+        <!-- bxSlider Javascript file -->
+        <script type="text/javascript">
+			
+			function DropDown(el) {
+				this.dd = el;
+				this.placeholder = this.dd.children('span');
+				this.opts = this.dd.find('ul.dropdown > li');
+				this.val = '';
+				this.index = -1;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						return false;
+					});
+
+					obj.opts.on('click',function(){
+						var opt = $(this);
+						obj.val = opt.text();
+						obj.index = opt.index();
+						obj.placeholder.text('Menu :  ' + obj.val);
+					});
+				},
+				getValue : function() {
+					return this.val;
+				},
+				getIndex : function() {
+					return this.index;
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-1').removeClass('active');
+				});
+
+			});
+			
+	
+			
+  $(function() {
+    $(".rslides").responsiveSlides();
+  });
+  
+  $(".rslides").responsiveSlides({
+  auto: true,             // Boolean: Animate automatically, true or false
+  speed: 1000,            // Integer: Speed of the transition, in milliseconds
+  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+  pager: false,           // Boolean: Show pager, true or false
+  nav: true,             // Boolean: Show navigation, true or false
+  random: false,          // Boolean: Randomize the order of the slides, true or false
+  pause: false,           // Boolean: Pause on hover, true or false
+  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+  prevText: "Previous",   // String: Text for the "previous" button
+  nextText: "Next",       // String: Text for the "next" button
+  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+  manualControls: "",     // Selector: Declare custom pager navigation
+  namespace: "rslides",   // String: Change the default namespace used
+  before: function(){},   // Function: Before callback
+  after: function(){}     // Function: After callback
+});
+
+	$('.progression-playlist').mediaelementplayer({
+	audioWidth: 400, // width of audio player
+	audioHeight:40, // height of audio player
+	startVolume: 0.5, // initial volume when the player starts
+	loop: false, // useful for <audio> player loops
+	features: ['playlistfeature', 'prevtrack', 'playpause', 'nexttrack','current', 'progress', 'duration', 'volume', 'playlist'],
+	playlist: true, //Playlist Show
+	playlistposition: 'bottom' //Playlist Location
+	});
+
+//<![CDATA[
+var submitcount63473 = 0;function checkWholeForm63473(theForm){var why = "";if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "First Name"); if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Last Name"); if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value); if(why != ""){alert(why);return false;}if(submitcount63473 == 0){submitcount63473++;theForm.submit();return false;}else{alert("Form submission is in progress.");return false;}}
+//]]>
+
+</script>
+    </body>
+</html>

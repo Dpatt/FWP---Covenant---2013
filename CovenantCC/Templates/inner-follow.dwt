@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- TemplateBeginEditable name="doctitle" --><title>Follow</title><!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+        <link href="/Follow/Follow/styles/follow.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="wrap">
+        <header>
+        <p class="logo"><a href="/follow-home"><img width="299" height="114" alt="Follow" src="/Follow/Follow/images/follow_logo.png" /></a></p>
+        <nav>
+        <ul>
+            <li><a href="/what-is-follow">What is follow?</a></li>
+            <li><a href="/register-today">Register Today</a></li>
+            <li><a href="/follow-contact-us">Contact Us</a></li>
+        </ul>
+        </nav>
+        </header>
+        <div id="content">
+        <!-- TemplateBeginEditable name="ContentArea" -->{tag_pagecontent}<!-- TemplateEndEditable -->
+        </div>
+        <footer>
+        <p>&copy; 2012 Covenant Church | Douglas GA | Powered by Fuze Media Design</p>
+        </footer>
+        </div>
+    </body>
+</html>

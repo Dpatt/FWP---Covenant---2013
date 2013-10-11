@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- TemplateBeginEditable name="doctitle" --><title>Follow</title><!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+        <link href="/Follow/Follow/styles/follow.css" rel="stylesheet" type="text/css" />
+        <link href="http://yourdomain.com/leanbackPlayer.default.css" type="text/css" media="screen" rel="stylesheet" />
+        <script type="text/javascript" src="http://yourdomain.com/leanbackPlayer.pack.js"></script>
+        <script type="text/javascript" src="http://yourdomain.com/leanbackPlayer.en.js"></script>
+        <script type="text/javascript" src="http://yourdomain.com/leanbackPlayer.de.js"></script>
+    </head>
+    <body>
+        <div id="wrap">
+        <header>
+        <p class="sMedia">{module_facebooklike,moduleTemplateGroup="Default",language="en_US",url="http://www.oneconnection.org/follow-home",layout="button_count",showFaces="",width="300",verb="like",font="",colorScheme="light",send=""}</p>
+        <p class="logo"><a href="/follow-home"><img width="299" height="114" alt="Follow" src="/Follow/Follow/images/follow_logo.png" /></a></p>
+        <nav>
+        <ul>
+            <li><a href="/what-is-follow">What is follow?</a></li>
+            <li><a href="/register-today">Register Today</a></li>
+            <li><a href="/follow-contact-us">Contact Us</a></li>
+        </ul>
+        </nav>
+        </header>
+        <div id="vid">
+        <div id="flick">
+        <iframe width="460" height="290" frameborder="0" src="http://player.vimeo.com/video/60106354?title=0&amp;byline=0&amp;portrait=0"></iframe>
+        </div>
+        <div id="join">
+        <h1>Join the Movement to bring out the Godly leadership in you!</h1>
+        </div>
+        </div>
+        <div id="content">
+        <!-- TemplateBeginEditable name="ContentArea" -->{tag_pagecontent}<!-- TemplateEndEditable -->
+        </div>
+        <footer>
+        <p>&copy; 2012 Covenant Church | Douglas GA | Powered by Fuze Media Design</p>
+        </footer>
+        </div>
+    </body>
+</html>

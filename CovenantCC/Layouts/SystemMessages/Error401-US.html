@@ -1,0 +1,22 @@
+<div class="system-error-message">
+<h2>Login or <a class="action" href="/registration">register for an account</a></h2>
+<p>We could not display the content you requested. This is because it is held within a Secure Zone. Please log in to access this content, or alternatively contact us to request access.</p>
+<p><a href="/">Click here</a> to go back to our Home Page.</p>
+<hr />
+<form action="https://oneconnection.worldsecuresystems.com/ZoneProcess.aspx?ZoneID=-1&amp;Referrer={module_siteUrl,true,true}&amp;OID={module_oid}&amp;OTYPE={module_otype}" method="post" onsubmit="return checkWholeForm37683(this)" name="catseczoneform37683">
+    <div class="form">
+    <div class="item"><label for="SZUsername">Username</label><br />
+    <input type="text" maxlength="255" id="SZUsername" name="Username" class="cat_textbox_small" /></div>
+    <div class="item"><label for="SZPassword">Password</label><br />
+    <input type="password" maxlength="255" id="SZPassword" name="Password" class="cat_textbox_small" /></div>
+    <div class="item"><input type="checkbox" id="RememberMe" name="RememberMe" /><label for="RememberMe">Remember Me</label></div>
+    <div class="item"><input type="submit" value="Log in" class="cat_button" />&nbsp;<a href="/_System/SystemPages/PasswordRetrieveRequest">Lost password?</a></div>
+    <script src="/CatalystScripts/ValidationFunctions.js" type="text/javascript"></script>
+    <script type="text/javascript">
+//<![CDATA[
+function checkWholeForm37683(theForm){var why = "";if (theForm.Username) why += isEmpty(theForm.Username.value, "Username");if (theForm.Password) why += isEmpty(theForm.Password.value, "Password");if (why != ""){alert(why);return false;}theForm.submit();return false;}
+//]]>
+</script>
+    </div>
+</form>
+<!-- END .system-message --></div>
