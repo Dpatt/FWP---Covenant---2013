@@ -182,14 +182,33 @@ a:hover, a:active, a:focus {
 }
 
 #innercontainer {
-	clear: both;
 	float: left;
-	margin-left: 0;
-	width: 100%;
+	margin-left: -10%;
+	width: 94%;
+	margin-top:-380px;
 	min-height:600px;
 	padding-left: .9em;
+	font-size:1.8em !important;
+	color:#555;
 	display: block;
-	margin-top: -640px;
+	margin-bottom: 20px;
+	visibility: visible;
+	transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+}
+
+#innercontainer2 {
+	float: left;
+	margin-left: -10%;
+	width: 94%;
+	margin-top:-500px;
+	min-height:600px;
+	padding-left: .9em;
+	font-size:1.8em !important;
+	color:#555;
+	display: block;
 	margin-bottom: 20px;
 	visibility: visible;
 	transition: all .5s ease-in-out;
@@ -511,10 +530,54 @@ a:hover, a:active, a:focus {
 	list-style:none;
 }
 
+#innerSidebar{
+	clear: none;
+	float: left;
+	width: 100%;
+	display: block;
+	visibility:hidden;
+}
+#phoneSidebar{
+clear:none;
+	width: 97% !important;
+	float:left;
+	text-align:center;
+	border:#FFF 5px solid;
+	margin-left:0 !important;
+	margin-bottom:30px;
+	transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	background-color:#7DE4DC;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}	
+
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
+#phoneSidebar{
+clear:none;
+	width: 98% !important;
+	float:left;
+	text-align:center;
+	border:#FFF 5px solid;
+	margin-left:0 !important;
+	transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	background-color:#7DE4DC;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}	
+	
 .gridContainer {
 	width: 90.675%;
 	height: 100%;
@@ -659,13 +722,26 @@ a:hover, a:active, a:focus {
 }
 
 #innercontainer {
-	clear: both;
-	float: left;
 	margin-left: 0;
-	width: 99%;
+	width: 97%;
 	min-height:600px;
+	color:#555;
 	display: block;
-	margin-top:-870px;
+	margin-top:-680px !important;
+	visibility: visible;
+	transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+}
+
+#innercontainer2 {
+	margin-left: 0;
+	width: 97%;
+	min-height:600px;
+	color:#555;
+	display: block;
+	margin-top:-800px !important;
 	visibility: visible;
 	transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
@@ -1003,22 +1079,61 @@ a.rslides_nav.rslides1_nav.next {
 }
 
 
+
+
 }
  @media only screen and (min-width: 768px) {
-#innercontainer {
-	clear: both;
+#innerSidebar{
+	clear:none;
+	width: 30% !important;
 	float: left;
-	margin-left: 0;
-	width: 99%;
-	min-height:600px;
+	margin-left:0 !important;
+	margin-top:-50px; !important;
 	display: block;
-	margin-top:-640px;
+	visibility:visible;
+	text-align:center;
+	border:#FFF 5px solid;
+	transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	background-color:#7DE4DC;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+
+#innercontainer {
+	width: 64% !important;
+	min-height:600px;
+	float: left;
+	color:#555;
+	display: block;
+	font-size:1.8em !important;
+	margin-top:-80px !important;
 	visibility: visible;
 	transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-webkit-transition: all .5s ease-in-out;
-}	 
+}
+
+#innercontainer2 {
+	width: 64% !important;
+	min-height:600px;
+	float: left;
+	color:#555;
+	display: block;
+	font-size:1.8em !important;
+	margin-top:-80px !important;
+	visibility: visible;
+	transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+}		 
 	 
 #slogan {
 	clear: both;
@@ -1304,6 +1419,44 @@ a.rslides_nav.rslides1_nav.next {
 	color:#305755;
 	text-decoration:none;
 }
+
+#sbSm .viewAll {
+	margin-left:20%;
+	font-size: 1em;
+	color: #5c5c5c;
+	text-decoration: none;
+	padding: 5px 25px;
+	width: 60px;
+	background-color: #7de4dc;
+	display: block;
+	clear: both;
+	border: 5px solid #fff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+#sbSm .viewAll:hover {
+	font-size: 1em;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 25px;
+	width: 60px;
+	background-color: #539792;
+	display: block;
+	clear: both;
+	border: 5px solid #fff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+#phoneSidebar{
+	visibility:hidden;
+}
+
  }
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
@@ -1464,21 +1617,50 @@ a.rslides_nav.rslides1_nav.next {
 	-webkit-transition: all .5s ease-in-out;
 }
 
-#innercontainer {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 99%;
-	min-height:600px;
-	display: block;
-	margin-top:0;
-	visibility: visible;
+#innerSidebar{
+	clear:none;
+	width: 20% !important;
+	float:left;
+	text-align:center;
+	border:#FFF 5px solid;
+	margin-left:0 !important;
+	margin-top:100px !important;
 	transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-webkit-transition: all .5s ease-in-out;
+	background-color:#7DE4DC;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
 }
 
+#phoneSidebar{
+	visibility:hidden;
+}
+
+#innercontainer {
+	clear:none !important;
+	float:left;
+	margin-top:70px !important;
+	width: 75% !important;
+	min-height:600px;
+	color:#555;
+	display: block;
+	visibility: visible;
+}
+
+#innercontainer2 {
+	clear:none !important;
+	float:left;
+	margin-top:70px !important;
+	width: 75% !important;
+	min-height:600px;
+	color:#555;
+	display: block;
+	visibility: visible;
+}
 
 #ftContent {
 	height: auto;
@@ -1813,6 +1995,39 @@ a.rslides_nav.rslides1_nav.next {
 	list-style:none;
 }
 
+#sbSm .viewAll {
+	margin-left:20%;
+	font-size: 1em;
+	color: #5c5c5c;
+	text-decoration: none;
+	padding: 5px 25px;
+	width: 60px;
+	background-color: #7de4dc;
+	display: block;
+	clear: both;
+	border: 5px solid #fff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+#sbSm .viewAll:hover {
+	font-size: 1em;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 25px;
+	width: 60px;
+	background-color: #539792;
+	display: block;
+	clear: both;
+	border: 5px solid #fff;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
 
 
 }
@@ -1961,6 +2176,99 @@ body {
 #copyRight a{
 	color: #fff;
 }
+
+#sbContact h2{
+	color:#539792;
+}
+
+#innerSidebar hr{
+	width:90%;
+	border:0;
+	color:#539792;
+background-color: #539792;
+height:2px;
+}
+
+#innerSidebar ul{
+	margin-left:-30px;
+}
+
+#innerSidebar li{
+	list-style:none;
+}
+
+#innerSidebar a{
+	font-size:1.5em;
+	font-weight:bold;
+	text-decoration:none;
+	color:#539792;
+}
+
+#innerSidebar a:hover{
+	font-size:1.5em;
+	text-decoration:none;
+	color:#FFF;
+}
+
+#sbContact ul{
+	margin-left:-30px;
+}
+
+#sbContact li{
+	list-style:none;
+	color:#539792;
+}
+
+#sbSm ul{
+	margin-left:-14px;
+}
+
+#sbSm li{
+	float:left;
+	padding-left:6px;
+	list-style:none;
+	
+}
+
+#phoneSidebar ul{
+	margin-left:-40px;
+}
+
+#phoneSidebar{
+	color:#539792;
+}
+
+#phoneSidebar hr{
+	width:90%;
+	margin-left:5%;
+	border:0;
+	color:#539792;
+background-color: #539792;
+height:2px;
+}
+
+#phoneSidebar li{
+	list-style:none;
+}
+
+#phoneSidebar a{
+	font-size:1.5em;
+	font-weight:bold;
+	text-decoration:none;
+	color:#539792;
+}
+
+#phoneSidebar a:hover{
+	font-size:1.5em;
+	text-decoration:none;
+	color:#FFF;
+}
+
+#sbSm p{
+	margin-top:30px;
+}
+
+
 
 
 /*_________________FONTS_________________*/
